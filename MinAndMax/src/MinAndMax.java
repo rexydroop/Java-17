@@ -15,7 +15,7 @@ public class MinAndMax {
 
         while (true){
                 try {
-                    System.out.println("Enter a number, or any character to quit");
+                    System.out.println("Enter a number, or any character to exit");
                     String input = scanner.nextLine();
                     maxValue = Maximum(Double.parseDouble(input));
                     minValue = Minimum(Double.parseDouble(input));
