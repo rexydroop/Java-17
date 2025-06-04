@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/LargestPrimeFactor/LargestPrimeFactor.iml" filepath="$PROJECT_DIR$/LargestPrimeFactor/LargestPrimeFactor.iml" />
       <module fileurl="file://$PROJECT_DIR$/MinAndMax/MinAndMax.iml" filepath="$PROJECT_DIR$/MinAndMax/MinAndMax.iml" />
       <module fileurl="file://$PROJECT_DIR$/OddOrEven/OddOrEven.iml" filepath="$PROJECT_DIR$/OddOrEven/OddOrEven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaintJob/PaintJob.iml" filepath="$PROJECT_DIR$/PaintJob/PaintJob.iml" />
       <module fileurl="file://$PROJECT_DIR$/PalindromeNumberCheck/PalindromeNumberCheck.iml" filepath="$PROJECT_DIR$/PalindromeNumberCheck/PalindromeNumberCheck.iml" />
       <module fileurl="file://$PROJECT_DIR$/PerfectNumber/PerfectNumber.iml" filepath="$PROJECT_DIR$/PerfectNumber/PerfectNumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrimeNumberCheck/PrimeNumberCheck.iml" filepath="$PROJECT_DIR$/PrimeNumberCheck/PrimeNumberCheck.iml" />
