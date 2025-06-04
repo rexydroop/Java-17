@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/AgeCalculator/AgeCalculator.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/AgeCalculator/AgeCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/DiagonalStar/DiagonalStar.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/DiagonalStar/DiagonalStar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/DigitsIntoWords/DigitsIntoWords.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/DigitsIntoWords/DigitsIntoWords.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/FactorPrinter/FactorPrinter.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/FactorPrinter/FactorPrinter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/FindBiggestNumber/FindBiggestNumber.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/FindBiggestNumber/FindBiggestNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/FizzBuzz/FizzBuzz.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/FizzBuzz/FizzBuzz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/FlipNumber/FlipNumber.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/FlipNumber/FlipNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/FlourPacker/FlourPacker.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/FlourPacker/FlourPacker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/GradeCalculator/GradeCalculator.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/GradeCalculator/GradeCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/GreatestCommonDivisor/GreatestCommonDivisor.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/GreatestCommonDivisor/GreatestCommonDivisor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/IsEvenNumber/IsEvenNumber.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/IsEvenNumber/IsEvenNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-17-Git.iml" filepath="$PROJECT_DIR$/.idea/Java-17-Git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/Java17/Java17.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/Java17/Java17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/LargestPrimeFactor/LargestPrimeFactor.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/LargestPrimeFactor/LargestPrimeFactor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/MinAndMax/MinAndMax.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/MinAndMax/MinAndMax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/OddOrEven/OddOrEven.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/OddOrEven/OddOrEven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/PalindromeNumberCheck/PalindromeNumberCheck.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/PalindromeNumberCheck/PalindromeNumberCheck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/PerfectNumber/PerfectNumber.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/PerfectNumber/PerfectNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/PrimeNumberCheck/PrimeNumberCheck.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/PrimeNumberCheck/PrimeNumberCheck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/SharedDigit/SharedDigit.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/SharedDigit/SharedDigit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/SharedLastDigit/SharedLastDigit.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/SharedLastDigit/SharedLastDigit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/SimpleCalculator/SimpleCalculator.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/SimpleCalculator/SimpleCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/Sum3And5/Sum3And5.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/Sum3And5/Sum3And5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/SumDigitsInANumber/SumDigitsInANumber.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/SumDigitsInANumber/SumDigitsInANumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/SumFirstAndLastDigit/SumFirstAndLastDigit.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/SumFirstAndLastDigit/SumFirstAndLastDigit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/SumOddRange/SumOddRange.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/SumOddRange/SumOddRange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/SumOf5Numbers/SumOf5Numbers.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/SumOf5Numbers/SumOf5Numbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/SumOfEvenDigits/SumOfEvenDigits.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/SumOfEvenDigits/SumOfEvenDigits.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/TimeTillBirthday/TimeTillBirthday.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/TimeTillBirthday/TimeTillBirthday.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/VowelOrConsonant/VowelOrConsonant.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/VowelOrConsonant/VowelOrConsonant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intellij JDK 17/MinAndMax/src/src.iml" filepath="$PROJECT_DIR$/Intellij JDK 17/MinAndMax/src/src.iml" />
+    </modules>
+  </component>
+</project>
