@@ -1,24 +1,7 @@
-import java.io.File;
-import java.io.IOException;
-
 public class Main {
+    public static final String ANSI_DARK_GRAY = "\u001B[38;5;240m";
     public static void main(String[] args) {
-        // Define the file name
-        String fileName = "document.txt";
-
-        // Create a File object
-        File file = new File(fileName);
-
-        try {
-            // Try to create the file
-            if (file.createNewFile()) {
-                System.out.println("File created: " + file.getName());
-            } else {
-                System.out.println("File already exists.");
-            }
-        } catch (IOException e) {
-            System.out.println("An error occurred while creating the file.");
-            e.printStackTrace();
-        }
+        String input = "hello";
+        System.out.println(input + ANSI_DARK_GRAY + "    id: 1");
     }
-}
+    }
