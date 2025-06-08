@@ -13,14 +13,12 @@ public class TaskTracker {
     public static void taskTracker() {
         Scanner scanner = new Scanner(System.in); //Create an object of type Scanner
         File file = new File("Tasks.txt"); //Create an object of type File
-        int taskNumber = 0;
 
         System.out.println("\n--- Task Tracker ---\n");
         System.out.println("Type 'exit' to quit");
         System.out.println("Type 'clear' to delete all previous tasks\n");
 
         while (true) {
-            taskNumber++;
             System.out.print("Task: ");
             String task = scanner.nextLine();
 
