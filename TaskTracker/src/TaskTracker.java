@@ -4,37 +4,42 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class TaskTracker {
-    static Scanner scanner = new Scanner(System.in);
-    static File file = new File("Tasks.txt");
-
     public static void main(String[] args) {
-        taskTracker();
+        taskTracker(); //Call method
     }
 
     public static void taskTracker() {
-        System.out.println("--- Task Tracker ---");
+        Scanner scanner = new Scanner(System.in); //Create an object of type Scanner
+        File file = new File("Tasks.txt"); //Create an object of type File
+
+        System.out.println("\n--- Task Tracker ---\n");
         System.out.println("Type 'exit' to quit");
-        System.out.println("Type 'clear' to delete all previous tasks");
-        System.out.println("Type task number to access task");
-        System.out.println("Type anything else to enter a new task");
+        System.out.println("Type 'clear' to delete all previous tasks\n");
 
         while (true) {
-            String input = scanner.nextLine();
+            System.out.print("Task: ");
+            String task = scanner.nextLine();
+
+            if (task.equalsIgnoreCase("exit")) {
+                System.out.println("Goodbye"); //Print Goodbye
+                break; //Exit loop
+            }
+            if (task.equalsIgnoreCase("clear")) {
+                clearFile(file); //Clear file
+                continue; //Restart
+            }
+
+            System.out.print("Due: ");
+            String due = scanner.nextLine();
+            System.out.println();
+
             try {
-                if (input.equalsIgnoreCase("exit")) {
-                    System.out.println("Goodbye");
-                    break; //Exit loop
-                }
-                if (input.equalsIgnoreCase("clear")) {
-                    clearFile(input); //Clear file
-                    continue;//Skip following code
-                }
 
                 file.createNewFile(); //Creates new file
                 FileWriter writer = new FileWriter(file, true); //Create an instance of the FileWriter class
 
-                writer.write("Task: " + input + "\n");//Write user input to created file
-                writer.flush();
+                writer.write(task + " | " + due + "\n");//Write user input to created file
+                writer.flush(); //Flush the input stream
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -42,11 +47,11 @@ public class TaskTracker {
         }
     }
 
-    public static void clearFile(String input) {
+    public static void clearFile(File file) {
         try {
-            FileWriter clearer = new FileWriter(file, false);
-            clearer.write("");//Clear all input
-            clearer.close();//Close the writer
+            FileWriter clearer = new FileWriter(file, false); //Create an instance of FileWriter
+            clearer.write(""); //Clear all input
+            clearer.close(); //Close the writer
         } catch (Exception e) {
             e.printStackTrace();
         }
