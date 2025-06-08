@@ -7,8 +7,6 @@ public class TaskTracker {
     static Scanner scanner = new Scanner(System.in);
     static File file = new File("Tasks.txt");
 
-    public static final String ANSI_DARK_GRAY = "\u001B[38;5;240m";
-
     public static void main(String[] args) {
         taskTracker();
     }
