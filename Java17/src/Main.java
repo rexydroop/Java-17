@@ -1,27 +1,24 @@
-import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
 
 public class Main {
-    private static final int currentYear = 2025;
     public static void main(String[] args) {
+        // Define the file name
+        String fileName = "document.txt";
+
+        // Create a File object
+        File file = new File(fileName);
+
         try {
-            System.out.println(getInputFromConsole(currentYear));
-        } catch (Exception e) {
-            System.out.println(getInputFromScanner(currentYear));
+            // Try to create the file
+            if (file.createNewFile()) {
+                System.out.println("File created: " + file.getName());
+            } else {
+                System.out.println("File already exists.");
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred while creating the file.");
+            e.printStackTrace();
         }
-    }
-
-    public static String getInputFromConsole(int currentYear){
-        int yearOfBirth = Integer.parseInt(System.console().readLine("What year were you born?"));
-        int age = currentYear - yearOfBirth;
-        return "So you are " + age + " years old";
-    }
-
-    public static String getInputFromScanner(int currentYear){
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("What year were you born? ");
-        int yearOfBirth = Integer.parseInt(scanner.nextLine());
-        int age = currentYear - yearOfBirth;
-        return "So you are " + age + " years old";
     }
 }
