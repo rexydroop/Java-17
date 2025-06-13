@@ -4,15 +4,13 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class TaskTracker {
-    public static final String ANSI_DARK_GRAY = "\u001B[38;5;240m";
-
     public static void main(String[] args) {
         taskTracker(); //Call method
     }
 
     public static void taskTracker() {
         Scanner scanner = new Scanner(System.in); //Create an object of type Scanner
-        File file = new File("Tasks.txt"); //Create an object of type File
+        File file = new File("C:/Users/Zain Haroon/Downloads/Github/TaskTracker/src/Tasks.txt"); //Create an object of type File
 
         System.out.println("\n--- Task Tracker ---\n");
         System.out.println("Type 'exit' to quit");

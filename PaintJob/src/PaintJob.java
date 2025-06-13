@@ -30,7 +30,6 @@ public class PaintJob {
             return -1;
         }
 
-
         double buckets = area / areaPerBucket;
 
         return (int) Math.ceil(buckets);
