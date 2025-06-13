@@ -15,8 +15,9 @@ public class TaskTracker {
     }
 
     public static void taskTracker() {
-        Scanner scanner = new Scanner(System.in); //Create an object of type Scanner
-        File file = new File("C:/Users/Zain Haroon/Downloads/Github/TaskTracker/src/Tasks.txt"); //Create an object of type File
+        Scanner scanner = new Scanner(System.in);//Create an object of type Scanner
+        String path = System.getProperty("user.dir");
+        File file = new File(path + "/Tasks.txt"); //Create an object of type File
 
         System.out.println("\n--- Task Tracker ---\n");
         System.out.println("Type 'exit' to quit");
@@ -33,7 +34,7 @@ public class TaskTracker {
             }
             if (task.equalsIgnoreCase("clear")) {
                 clearFile(file); //Clear file
-                System.out.println("--- " + ANSI_RED + "All tasks have been cleared!" + ANSI_RESET);
+                System.out.println("-- " + ANSI_RED + "All tasks have been cleared!" + ANSI_RESET);
                 continue; //Restart
             }
             if (task.equalsIgnoreCase("tasks")) {
@@ -72,15 +73,15 @@ public class TaskTracker {
         try {
             Scanner reader = new Scanner(file);
             if (!reader.hasNextLine()){
-                System.out.println("--- " + ANSI_RED + "No tasks have been saved!" + ANSI_RESET);
+                System.out.println("-- " + ANSI_RED + "No tasks have been saved!" + ANSI_RESET);
             }
             int taskNumber = 1;
             while (reader.hasNextLine()){
-                System.out.println("--- Task #" + taskNumber + ": " + ANSI_BLUE + reader.nextLine() + ANSI_RESET);
+                System.out.println("-- Task #" + taskNumber + ": " + ANSI_BLUE + reader.nextLine() + ANSI_RESET);
                 taskNumber++;
             }
         }catch (FileNotFoundException notFoundException){
-            System.out.println("--- " + ANSI_RED + "File was not found!" + ANSI_RESET);
+            System.out.println("-- " + ANSI_RED + "File was not found!" + ANSI_RESET);
             notFoundException.printStackTrace();
         }
 
