@@ -2,75 +2,49 @@ import java.io.*;
 import java.util.Scanner;
 
 public class TaskTracker {
-    public static final String ANSI_RED = "\u001B[31m";
-    public static final String ANSI_BLUE = "\u001B[36m";
-    public static final String ANSI_GREEN = "\u001B[92m";
-    public static final String ANSI_RESET = "\u001B[0m";
-    public static final String noTasks = "-- " + ANSI_RED + "No tasks have been saved!" + ANSI_RESET;
-    public static final String notFound = "-- " + ANSI_RED + "File was not found!" + ANSI_RESET;
+    static final String RED = "\u001B[31m", BLUE = "\u001B[36m", GREEN = "\u001B[92m", CLEAR = "\u001B[0m";
+    static final String noTasks = "-- " + RED + "No tasks have been saved!" + CLEAR;
+    static final String notFound = "-- " + RED + "File was not found!" + CLEAR;
 
     public static void main(String[] args) {
-        taskTracker(); //Call method
-    }
+        Scanner sc = new Scanner(System.in);
+        File file = new File(System.getProperty("user.dir") + "/Tasks.txt");
 
-    public static void taskTracker() {
-        Scanner scanner = new Scanner(System.in);//Create an object of type Scanner
-        String path = System.getProperty("user.dir");
-        File file = new File(path + "/Tasks.txt"); //Create an object of type File
-
-        System.out.println("\n--- Task Tracker ---\n");
-        System.out.println("Type 'exit' to quit");
-        System.out.println("Type 'clear' to delete all previous tasks");
-        System.out.println("Type 'tasks' to display all previous tasks\n");
+        System.out.println("\n--- Task Tracker ---\nType 'exit' to quit\nType 'clear' to delete all tasks\nType 'tasks' to show all tasks\n");
 
         while (true) {
             System.out.print("Task: ");
-            String task = scanner.nextLine();
+            String task = sc.nextLine();
 
             if (task.equalsIgnoreCase("exit")) {
-                System.out.println("- " + ANSI_GREEN + "Goodbye" + ANSI_RESET + " -"); //Print Goodbye
-                break; //Exit loop
-            }
-
-            if (task.equalsIgnoreCase("clear")) {
+                System.out.println("- " + GREEN + "Goodbye" + CLEAR + " -");
+                break;
+            } else if (task.equalsIgnoreCase("clear")) {
                 file.delete();
-                System.out.println("-- " + ANSI_RED + "All tasks have been cleared!" + ANSI_RESET);
-                continue; //Restart
-            }
+                System.out.println("-- " + RED + "All tasks cleared!" + CLEAR);
+            } else if (task.equalsIgnoreCase("tasks")) {
+                printFile(file);
+            } else {
+                System.out.print("Due: ");
+                String due = sc.nextLine();
 
-            if (task.equalsIgnoreCase("tasks")) {
-                printFile(file); //print all tasks in the file
-                continue; //Restart
-            }
-
-            System.out.print("Due: ");
-            String due = scanner.nextLine();
-            System.out.println();
-
-            try {
-                file.createNewFile(); //Creates new file
-                FileWriter writer = new FileWriter(file, true); //Create an instance of the FileWriter class
-
-                writer.write(task + " | " + due + "\n");//Write user input to created file
-                writer.flush(); //Flush the input stream
-
-            } catch (IOException e) {
-                System.out.println(notFound);
+                try (FileWriter writer = new FileWriter(file, true)) {
+                    file.createNewFile();
+                    writer.write(task + " | " + due + "\n");
+                } catch (IOException e) {
+                    System.out.println(notFound);
+                }
+                System.out.println();
             }
         }
     }
 
-    public static void printFile(File file){
-        int taskNumber = 1;
-        try {
-            Scanner reader = new Scanner(file);
-            while (reader.hasNextLine()){
-                System.out.println("-- Task #" + taskNumber + ": " + ANSI_BLUE + reader.nextLine() + ANSI_RESET);
-                taskNumber++;
-            }
-        }catch (FileNotFoundException notFoundException){
+    static void printFile(File file) {
+        try (Scanner reader = new Scanner(file)) {
+            for (int i = 1; reader.hasNextLine(); i++)
+                System.out.println("-- Task #" + i + ": " + BLUE + reader.nextLine() + CLEAR);
+        } catch (FileNotFoundException e) {
             System.out.println(noTasks);
         }
     }
-
 }
