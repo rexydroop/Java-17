@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 public class TaskTracker {
     static final String RED = "\u001B[31m", BLUE = "\u001B[36m", GREEN = "\u001B[92m", CLEAR = "\u001B[0m";
-    static final String noTasks = "-- " + RED + "No tasks have been saved!" + CLEAR;
-    static final String notFound = "-- " + RED + "File was not found!" + CLEAR;
+    static final String noTasks = "-- " + RED + "No tasks have been saved!" + CLEAR, notFound = "-- " + RED + "File was not found!" + CLEAR;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
