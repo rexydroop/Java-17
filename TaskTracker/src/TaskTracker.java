@@ -10,7 +10,7 @@ public class TaskTracker {
         Scanner sc = new Scanner(System.in);
         File file = new File(System.getProperty("user.dir") + "/Tasks.txt");
 
-        System.out.println("\n--- Task Tracker ---\nType 'exit' to quit\nType 'clear' to delete all tasks\nType 'tasks' to show all tasks\n");
+        System.out.println("\n--- Task Tracker ---\nType 'exit' to quit\nType 'clear' to delete all tasks\nType 'tasks' to show all tasks\nType anything else to save a task\n");
 
         while (true) {
             System.out.print("Task: ");
